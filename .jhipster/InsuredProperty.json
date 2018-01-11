@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "lossTypeProperty",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeOfProperty",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertyStreetAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertyCity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertyState",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertyZip",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170312130947",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "insured_property",
+    "pagination": "pagination"
+}

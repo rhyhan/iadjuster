@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "claim",
+            "otherEntityName": "claim",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "claimNumber"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dateOfLoss",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "factsOfLoss",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "comments",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170313021735",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "claimant",
+    "pagination": "pagination"
+}

@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "placeOfLoss",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lossType",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170312131208",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "claimant_property",
+    "pagination": "pagination"
+}

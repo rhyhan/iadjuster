@@ -1,0 +1,140 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "insured",
+            "otherEntityName": "insured",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "insuredCoverageStrip",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "claim"
+        },
+        {
+            "relationshipName": "claimant",
+            "otherEntityName": "claimant",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "claim"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "policyNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "policyExpirationDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "claimNumber",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "claimRepresentative",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "claimRepresentativePhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateOfLoss",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "factsOfLoss",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "middleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "homePhone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mobilePhone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "businessPhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "streetAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "zip",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "comments",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "insuranceAgentName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "insuranceAgentPhone",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170313012328",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "claim",
+    "pagination": "pagination"
+}

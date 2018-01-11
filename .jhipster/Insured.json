@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "claim",
+            "otherEntityName": "claim",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "insured"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dateOfLoss",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "factsOfLoss",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "comments",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "insuredCoverageStrip",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170313024806",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "insured",
+    "pagination": "pagination"
+}
